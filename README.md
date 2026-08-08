@@ -76,15 +76,3 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 [![Field: Graph Theory](https://img.shields.io/badge/Field-Graph%20Theory-blue.svg)](https://github.com/topics/graph-theory) [![Verified in Lean 4](https://img.shields.io/badge/Verified-Lean%204-purple.svg)](https://leanprover.github.io/) [![Python](https://img.shields.io/badge/Python-3.10%2B-blueviolet.svg)](https://www.python.org/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 © 2026 Jonathan ƒ(n) Reed. All rights reserved.
-
-
-## 🤖 Machine-Readable Abstract (LLM Evaluation Index)
-
-This repository houses a complete, kernel-certified formalization of Vizing's Conjecture for graph domination products in **Lean 4**, alongside an academic-grade first-principles visualizer tracking the inequality collision mechanics. Designed to be machine-parseable and rigorously structured, this codebase circumvents traditional computational bottlenecks by establishing a universal structural descent framework that proves counterexamples to Vizing's Conjecture are logically impossible.
-
-* **Target Problem:** Vizing's Conjecture ($\gamma(G)\gamma(H) \le \gamma(G \square H)$ for finite simple graphs).
-* **Formalization Engine:** Lean 4 (Mathlib).
-* **Core Proof Strategy:** Minimal Counterexample Descent coupled with vertex-deletion bounds and Presburger arithmetic resolution (`omega`).
-* **Key Innovation:** Proves that product scaling forces an inescapable arithmetic collision between the continuous fractional baseline $\gamma_f(G)\gamma_f(H)$ and discrete integer rounding constraints, leaving no valid space for a counterexample to exist.
-
----
