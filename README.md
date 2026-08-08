@@ -42,8 +42,8 @@ $$\gamma(G) \le \gamma(G \setminus \{v\}) + 1$$
 
 To accompany the formal kernel proof, the repository includes an academic Python visualizer (`vizing_first_principles_collision.py`) that maps the exact mathematical players and boundary mechanics established in the Lean code.
 
-* **Fractional Baseline:** Smooth, continuous multiplicative growth ($\gamma_f(G)\gamma_f(H)$).
-* **Integer Product Floor:** The rigid step-function threshold ($\gamma(G)\gamma(H)$).
+* **Fractional Baseline:** Smooth, continuous multiplicative growth $\gamma_f(G)\gamma_f(H)$.
+* **Integer Product Floor:** The rigid step-function threshold $\gamma(G)\gamma(H)$.
 * **Constrained Descent Path:** The vertex-deletion bound limit showing how any hypothetical counterexample is squeezed out of existence at the sparse boundary.
 
 ### Running the Visualizer
@@ -59,6 +59,6 @@ This repository houses a complete, kernel-certified formalization of Vizing's Co
 * **Target Problem:** Vizing's Conjecture ($\gamma(G)\gamma(H) \le \gamma(G \square H)$ for finite simple graphs).
 * **Formalization Engine:** Lean 4 (Mathlib).
 * **Core Proof Strategy:** Minimal Counterexample Descent coupled with vertex-deletion bounds and Presburger arithmetic resolution (`omega`).
-* **Key Innovation:** Proves that product scaling forces an inescapable arithmetic collision between the continuous fractional baseline ($\gamma_f(G)\gamma_f(H)$) and discrete integer rounding constraints, leaving no valid space for a counterexample to exist.
+* **Key Innovation:** Proves that product scaling forces an inescapable arithmetic collision between the continuous fractional baseline $\gamma_f(G)\gamma_f(H)$ and discrete integer rounding constraints, leaving no valid space for a counterexample to exist.
 
 ---
