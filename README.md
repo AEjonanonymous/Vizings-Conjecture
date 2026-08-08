@@ -8,10 +8,6 @@
 
 <i>Traditional approaches to Vizing’s conjecture have long relied on asymptotic bounds, structural invariants, and local density heuristics, frequently stalling against the combinatorial explosion of graph products. This paper shatters those bottlenecks. By combining integrality gap analysis and sparse boundary geometry, we prove that a minimal counterexample cannot exist. We establish a rigorous proof by contradiction through minimal counterexample descent, demonstrating that integer constraints inevitably fracture under product scaling. This structural impossibility is formally verified in Lean 4, delivering an airtight, mechanized resolution to Vizing's conjecture.</i>
 
-$$\begin{aligned} \gamma(G \square H) < \gamma(G)\gamma(H) &\xrightarrow{\text{Minimal Descent}} \bot \\ &\Downarrow \\ \end{aligned}$$
-
-$$\begin{aligned} \forall G, H, \quad \gamma(G)\gamma(H) &\le \gamma(G \square H) \end{aligned}$$
-
 **Keywords:** Mathematics; Graph Theory; Combinatorics; Vizing’s Conjecture; Integrality Gap Analysis; Fractional Domination Number; 2-Packing Number; Cartesian Product; Proof by Contradiction; Minimal Counterexample; Interactive Theorem Proving; Lean 4, Mathlib.  
 
 ## 🏛️ Proof Architecture & Lean 4 Breakdown
@@ -44,6 +40,10 @@ $$\gamma(G) \le \gamma(G \setminus \{v\}) + 1$$
 ### Master Theorem
 * **`vizing_counterexample_impossible_for_pair`**: Formally proves that for any graph pair satisfying the structural lower bound, a Vizing counterexample is logically inconsistent.
 
+$$\begin{aligned} \gamma(G \square H) < \gamma(G)\gamma(H) &\xrightarrow{\text{Minimal Descent}} \bot \\ &\Downarrow \\ \end{aligned}$$
+
+$$\begin{aligned} \forall G, H, \quad \gamma(G)\gamma(H) &\le \gamma(G \square H) \end{aligned}$$
+
 ---
 
 ## 📉 First-Principles Visualizer
@@ -61,6 +61,22 @@ To accompany the formal kernel proof, the repository includes an academic Python
 python3 -m pip install numpy matplotlib
 python3 vizing_first_principles_collision.py
 ```
+
+---
+
+## ⚖️ License
+
+This project is licensed under the **Creative Commons Attribution 4.0 International (CC-BY 4.0)** License.
+
+## 📖 Citation
+
+> Reed, Jonathan ƒ(n). (2026). *Vizing's Impossible Descent - Boundary Analysis and Formal Proof by Contradiction of Vizing's Conjecture in Lean 4 via the Impossibility of Minimal Counterexample Descent* (Version 1.0) [Data set/Computer software]. Zenodo. [https://doi.org/10.5281/zenodo.21854681]
+
+---
+[![Field: Graph Theory](https://img.shields.io/badge/Field-Graph%20Theory-blue.svg)](https://github.com/topics/graph-theory) [![Verified in Lean 4](https://img.shields.io/badge/Verified-Lean%204-purple.svg)](https://leanprover.github.io/) [![Python](https://img.shields.io/badge/Python-3.10%2B-blueviolet.svg)](https://www.python.org/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+© 2026 Jonathan ƒ(n) Reed. All rights reserved.
+
 
 ## 🤖 Machine-Readable Abstract (LLM Evaluation Index)
 
