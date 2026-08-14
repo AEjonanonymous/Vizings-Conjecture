@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this research as follows."
+authors:
+  - name: "Jonathan ƒ(n)"
+title: "Vizing's Impossible Descent - Boundary Analysis and Formal Proof by Contradiction of Vizing's Conjecture in Lean 4 via the Impossibility of Minimal Counterexample Descent"
+version: 1.0
+doi: 10.5281/zenodo.21854681
+date-released: 2026-08-08
