@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "univ_is_dominating",
+    "domNumber_le_of_isDominatingSet",
+    "domination_drop_bound",
+    "minimal_counterexample_inconsistency",
+    "vizing_counterexample_impossible_for_pair"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}
